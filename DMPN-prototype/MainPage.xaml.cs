@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Net;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
-using System.Windows.Navigation;
 
 namespace DMPN_prototype
 {
@@ -31,6 +20,7 @@ namespace DMPN_prototype
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             App.queueViewModel.AddEntry(("65920"+((new Random(99999)).Next()).ToString())+"@tmobile", "spysrs2@gmail.com", "Lol.", QueueViewModel.DUMPED);
+            App.queueViewModel.AddEntry(("65920" + ((new Random(99999)).Next()).ToString()) + "@tmobile", "spysrs2@gmail.com", "test2.", QueueViewModel.PROPAGATING);
         }
 
         private void btnSend_Click(object sender, RoutedEventArgs e)
@@ -50,6 +40,24 @@ namespace DMPN_prototype
                 txtMessage.SetDefaultText(true);
 
                 MessageBox.Show("Your message has been added to your Queue!");
+            }
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult m = MessageBox.Show("This will clear sent and expired packets. Are you sure?", "Clear Packets?", MessageBoxButton.OKCancel);
+            if (m == MessageBoxResult.OK)
+            {
+                App.queueViewModel.cleanEntries();
+            }
+        }
+
+        private void btnClearAll_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult m = MessageBox.Show("This will clear all packets. Are you sure?", "Clear Packets?", MessageBoxButton.OKCancel);
+            if (m == MessageBoxResult.OK)
+            {
+                App.queueViewModel.clearAllEntries();
             }
         }
     }

@@ -54,8 +54,9 @@
 			
 			<!--Pivot item three-->
 			<controls:PivotItem Header="settings">
-				<StackPanel Width="432" Margin="12,35,12,0" Height="78" VerticalAlignment="Top">
-					<TextBlock Text="coming soon..." TextWrapping="Wrap" Margin="0" Style="{StaticResource PhoneTextLargeStyle}" TextAlignment="Center"/>
+				<StackPanel Margin="8,0,8,8" Height="185" VerticalAlignment="Bottom" d:LayoutOverrides="VerticalAlignment">
+					<Button x:Name="btnClear" Content="Clear Expired and Sent Packets" Height="93" Click="btnClear_Click" />
+					<Button x:Name="btnClearAll" Content="Clear All Packets" Height="93" HorizontalAlignment="Right" Width="440" Click="btnClearAll_Click" />
 				</StackPanel>
 			</controls:PivotItem>
 			
@@ -74,5 +75,5 @@
 				</ListBox>
 			</controls:PivotItem>
 		</controls:Pivot>
-	</Grid>
+    </Grid>
 </phone:PhoneApplicationPage>
