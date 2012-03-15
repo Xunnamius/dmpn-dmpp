@@ -2,8 +2,6 @@
 #################
 ./DMPN-prototype/Bin
 ./DMPN-prototype/obj
-./DMPN-prototype/Bin/
-./DMPN-prototype/obj/
 
 # mstest test results #
 #######################
