@@ -5,6 +5,7 @@
 	
 	<local:QueueViewModel.Items>
 		<local:QueueItemViewModel Destination="trefighter2334@aol.com" Source="b.dickens@darkgray.org" Message="Hello, world!" MessageExcerpt="Hello..." Status="PROPAGATING" />
-		<local:QueueItemViewModel Destination="trefighter2334@aol.com" Source="b.dickens@darkgray.org" Message="Goodbye, world!" MessageExcerpt="Goodbye, World!" Status="PRUNED" />
+		<local:QueueItemViewModel Destination="trefighter2334@gmail.com" Source="b.dickens@darkgray.org" Message="Goodbye, world!" MessageExcerpt="Goodbye, World!" Status="PRUNED" />
+		<local:QueueItemViewModel Destination="trefighter2334@hotmail.com" Source="b.dickens@darkgray.org" Message="Ohayo!" MessageExcerpt="Hajimemashite, Sekai!" Status="DUMPED" />
 	</local:QueueViewModel.Items>
 </local:QueueViewModel>
