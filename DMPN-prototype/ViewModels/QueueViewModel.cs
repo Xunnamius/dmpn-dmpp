@@ -1,17 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Collections.ObjectModel;
+using System.Collections.Generic;
 
 namespace DMPN_prototype
 {
@@ -38,6 +28,7 @@ namespace DMPN_prototype
         /// <param name="dest">Message destination email</param>
         /// <param name="source">Message source email</param>
         /// <param name="msg">Message contents (body)</param>
+        /// <param name="status">Message network status</param>
         /// <returns>A reference to the entry item.</returns>
         public QueueItemViewModel AddEntry(string dest, string source, string msg, string status=null)
         {
@@ -49,6 +40,48 @@ namespace DMPN_prototype
         {
             this.Items.Add(obj);
             return this.Items[this.Items.Count - 1];
+        }
+
+        /// <summary>
+        /// Deletes an object from the Queue
+        /// </summary>
+        /// <param name="obj">Item to delete</param>
+        private void DeleteEntry(QueueItemViewModel obj)
+        {
+            this.Items.Remove(obj);
+        }
+
+        /// <summary>
+        /// Clears any Dumped or Expired Packs from the Queue
+        /// </summary>
+        public void cleanEntries()
+        { 
+            // Local Vars
+            List<QueueItemViewModel> dequeList = new List<QueueItemViewModel>();
+            QueueItemViewModel anItem;
+
+            // Loop through the Queue and find DUMPED and EXPIRED packets
+            // Add them to a list to be dequed after all of Them are found
+            for (int i = 0; i < this.Items.Count; i++)
+            {
+                anItem = this.Items[i];
+                if (anItem.Status == QueueViewModel.DUMPED || anItem.Status == QueueViewModel.EXPIRED)
+                {
+                   
+                    dequeList.Add(anItem);
+                }
+            }
+
+            // Delete all found packets from the queue
+            foreach (QueueItemViewModel toDelete in dequeList)
+            {
+                DeleteEntry(toDelete);
+            }
+            
+        }
+
+        public void clearAllEntries() {
+            this.Items.Clear();
         }
 
         public void SendEntry()
