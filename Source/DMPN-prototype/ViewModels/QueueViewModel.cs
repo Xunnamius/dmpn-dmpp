@@ -56,7 +56,6 @@ namespace DMPN_prototype
         /// </summary>
         public void cleanEntries()
         { 
-            // Local Vars
             List<QueueItemViewModel> dequeList = new List<QueueItemViewModel>();
             QueueItemViewModel anItem;
 
@@ -66,21 +65,16 @@ namespace DMPN_prototype
             {
                 anItem = this.Items[i];
                 if (anItem.Status == QueueViewModel.DUMPED || anItem.Status == QueueViewModel.EXPIRED)
-                {
-                   
                     dequeList.Add(anItem);
-                }
             }
 
             // Delete all found packets from the queue
             foreach (QueueItemViewModel toDelete in dequeList)
-            {
                 DeleteEntry(toDelete);
-            }
-            
         }
 
-        public void clearAllEntries() {
+        public void clearAllEntries()
+        {
             this.Items.Clear();
         }
 
