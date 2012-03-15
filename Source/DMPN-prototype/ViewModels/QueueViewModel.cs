@@ -77,11 +77,6 @@ namespace DMPN_prototype
         {
             this.Items.Clear();
         }
-
-        public void SendEntry()
-        {
-            // Implement this next
-        }
         
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
