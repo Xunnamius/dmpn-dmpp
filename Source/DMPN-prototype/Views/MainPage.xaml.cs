@@ -2,8 +2,11 @@
 using System.Windows;
 using Microsoft.Phone.Controls;
 using System.Diagnostics;
+using DMPN_prototype.ViewModels;
 
-namespace DMPN_prototype
+// TODO: We need (deep) settings of some kind and long-press functionality in the queue!
+
+namespace DMPN_prototype.Views
 {
     public partial class MainPage : PhoneApplicationPage
     {
@@ -21,7 +24,7 @@ namespace DMPN_prototype
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             App.queueViewModel.AddEntry(("65920"+((new Random(99999)).Next()).ToString())+"@tmobile", "spysrs2@gmail.com", "Lol.", QueueViewModel.DUMPED);
-            App.queueViewModel.AddEntry(("65920" + ((new Random(99999)).Next()).ToString()) + "@tmobile", "spysrs2@gmail.com", "test2.", QueueViewModel.PROPAGATING);
+            App.queueViewModel.AddEntry(("8826" + ((new Random(999)).Next()).ToString()) + "@tmobile", "spysrs2@gmail.com", "test2.", QueueViewModel.PROPAGATING);
         }
 
         private void btnSend_Click(object sender, RoutedEventArgs e)

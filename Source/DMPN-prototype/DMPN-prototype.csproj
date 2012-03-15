@@ -62,10 +62,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\App.xaml.cs">
+    <Compile Include="Models\Broadcast_Adapters\Broadcaster_BluetoothAdapter.cs" />
+    <Compile Include="Models\Broadcast_Adapters\Broadcaster_NativeAdhocAdapter.cs" />
+    <Compile Include="Models\Broadcast_Adapters\Broadcaster_WifiAdapter.cs" />
+    <Compile Include="Models\IBroadcaster_Adapter.cs" />
+    <Compile Include="Models\ThreadPool_TimeShare.cs" />
+    <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\Dualcaster.cs" />
+    <Compile Include="Models\Broadcaster.cs" />
     <Compile Include="Models\NetworkObserver.cs" />
     <Compile Include="ViewModels\DebugItemViewModel.cs" />
     <Compile Include="ViewModels\DebugViewModel.cs" />
@@ -78,7 +83,7 @@
     <Compile Include="ViewModels\QueueViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="Views\App.xaml">
+    <ApplicationDefinition Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace DMPN_prototype
+namespace DMPN_prototype.ViewModels
 {
     public class DebugItemViewModel : INotifyPropertyChanged 
     {

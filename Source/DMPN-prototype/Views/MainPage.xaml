@@ -7,7 +7,7 @@
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:local="clr-namespace:DMPN_prototype"
-	x:Class="DMPN_prototype.MainPage"
+	x:Class="DMPN_prototype.Views.MainPage"
 	
 	mc:Ignorable="d"
 	d:DesignWidth="480"

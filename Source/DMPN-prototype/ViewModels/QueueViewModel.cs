@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
 
-namespace DMPN_prototype
+namespace DMPN_prototype.ViewModels
 {
     // TODO: Extract QueueViewModel and QueueItemViewModel into abstract classes and inherit
     public class QueueViewModel : INotifyPropertyChanged
