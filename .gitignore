@@ -1,9 +1,7 @@
 # build folders #
 #################
-bin
-Bin
-obj
-Obj
+./DMPN-prototype/Bin
+./DMPN-prototype/obj
 
 # mstest test results #
 #######################
@@ -15,3 +13,7 @@ TestResults
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# etc #
+#######
+DMPN-prototype.suo
