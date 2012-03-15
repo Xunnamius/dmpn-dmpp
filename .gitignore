@@ -1,0 +1,17 @@
+# build folders #
+#################
+bin
+Bin
+obj
+Obj
+
+# mstest test results #
+#######################
+TestResults
+
+# os generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
