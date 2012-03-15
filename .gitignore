@@ -1,11 +1,11 @@
 # build folders #
 #################
-./DMPN-prototype/Bin
-./DMPN-prototype/obj
+./Source/DMPN-prototype/Bin
+./Source/DMPN-prototype/obj
 
 # mstest test results #
 #######################
-TestResults
+./Source/DMPN-prototype/TestResults
 
 # os generated files #
 ######################
@@ -16,4 +16,4 @@ Thumbs.db
 
 # etc #
 #######
-DMPN-prototype.suo
+*.suo
