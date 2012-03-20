@@ -97,7 +97,10 @@ namespace DMPN_prototype
             {
                 App.queueViewModel.AddEntry("sam@mail.microsoft.com", "anna@microsoft.com", "Hello! Network features are not operational, currently, since this is only a prototype.", QueueViewModel.DUMPED);
                 App.queueViewModel.AddEntry("b.dickens@darkgray.org", "super3@gmail.com", "Is it possible to test wifi in a spacial capacity with an emulator?! ~Shawn", QueueViewModel.EXPIRED);
+                
             }
+
+            App.queueViewModel.AddEntry("super3boy@gmail.com", "super3boy@gmail.com", "Hello", QueueViewModel.PROPAGATING);
 
             App.debugViewModel.AddEntry("Version", "0.6.4-prototype");
             App.debugViewModel.AddEntry("Credits", "Lead Developers: Bernard Dickens, Shawn Wilkinson\nJunior Developers: Stephen Stafford, Aaron Owens\nMentor: Dr. Kenneth R. Perry\nFaculty: Prof. Sonya Dennis, Prof. Henry Cook, Dr. Kinnis Gosha\nJames Newton-King's Json.NET lib");

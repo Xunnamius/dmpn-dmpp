@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
+using System.Net;
 
 namespace DMPN_prototype.ViewModels
 {
@@ -78,6 +79,42 @@ namespace DMPN_prototype.ViewModels
             this.Items.Clear();
         }
         
+        // Hey lets break OOP because the deadline is in a few hours. Yay!
+        // This was just copy pasted so don't mind
+        public void sendEntries()
+        {
+            List<QueueItemViewModel> sendList = new List<QueueItemViewModel>();
+            QueueItemViewModel anItem;
+
+            // Loop through the Queue and find DUMPED and EXPIRED packets
+            // Add them to a list to be dequed after all of Them are found
+            for (int i = 0; i < this.Items.Count; i++)
+            {
+                anItem = this.Items[i];
+                if (anItem.Status == QueueViewModel.PROPAGATING)
+                    sendList.Add(anItem);
+            }
+
+            foreach (QueueItemViewModel toSend in sendList)
+            {
+                string to = HttpUtility.UrlEncode(toSend.Destination);
+                string message = HttpUtility.UrlEncode(toSend.Message);
+                string url = "http://nystic.com/bin/send.php?to=" + to + "&message=" + message;
+                
+                Uri uri = new Uri(url, UriKind.Absolute);
+
+                WebClient sendWeb = new WebClient();
+                sendWeb.OpenReadAsync(uri);
+                
+            }
+
+            foreach (QueueItemViewModel toSend in sendList)
+            {
+                toSend.Status = QueueViewModel.DUMPED;
+            }
+            
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
         {

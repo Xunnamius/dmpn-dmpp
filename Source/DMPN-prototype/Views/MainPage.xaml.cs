@@ -64,5 +64,10 @@ namespace DMPN_prototype.Views
                 App.queueViewModel.clearAllEntries();
             }
         }
+
+        private void btnSend1_Click(object sender, RoutedEventArgs e)
+        {
+            App.queueViewModel.sendEntries();
+        }
     }
 }

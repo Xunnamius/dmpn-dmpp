@@ -54,7 +54,8 @@
 			
 			<!--Pivot item three-->
 			<controls:PivotItem Header="settings">
-				<StackPanel Margin="8,0,8,8" Height="185" VerticalAlignment="Bottom" d:LayoutOverrides="VerticalAlignment">
+				<StackPanel Margin="8,0,8,8" Height="591" VerticalAlignment="Bottom">
+					<Button x:Name="btnSend1" Content="Manual Send" Height="183" Margin="8,0,0,0" Click="btnSend1_Click" />
 					<Button x:Name="btnClear" Content="Clear Expired and Sent Packets" Height="93" Click="btnClear_Click" />
 					<Button x:Name="btnClearAll" Content="Clear All Packets" Height="93" HorizontalAlignment="Right" Width="440" Click="btnClearAll_Click" />
 				</StackPanel>
