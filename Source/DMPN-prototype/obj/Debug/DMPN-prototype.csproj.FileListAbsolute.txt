@@ -1,0 +1,17 @@
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\obj\Debug\DMPN-prototype.csprojResolveAssemblyReference.cache
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\obj\Debug\App.g.i.cs
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\obj\Debug\Views\MainPage.g.i.cs
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\obj\Debug\DMPN_prototype.g.resources
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\Bin\Debug\Assets\Images\ApplicationIcon.png
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\Bin\Debug\Assets\Images\Background.png
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\Bin\Debug\DMPN_prototype.dll
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\Bin\Debug\DMPN_prototype.pdb
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\Bin\Debug\AppManifest.xaml
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\Bin\Debug\DMPN-prototype.xap
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\Bin\Debug\Newtonsoft.Json.xml
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\obj\Debug\DMPN_prototype.dll
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\obj\Debug\DMPN_prototype.pdb
+C:\Users\Super3\Code\DMPN-DMPP\Source\DMPN-prototype\obj\Debug\XapCacheFile.xml
